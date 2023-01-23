@@ -15,81 +15,81 @@ public class Vehicle {
 	public Vehicle(){
 	}
 	// This is also a constructor of the same name but declared differently with an ability to take in parameters. This is 'Constructor Overloading'
-	public Vehicle(String invclass,String inmake,String inmodel,int inweight,String incolor,double inmpg,int inyear){
+	public Vehicle(String vclass,String make,String model,int weight,String color,double mpg,int year){
 		//This constructor can take in all the needed info for a car to be defined in the line declaring the object. It will call the setters.
 		// we could access the data fields above directly 'mpg = inmpg;' for example, but we would like to still apply our datahiding rules
-		setVClass(invclass);
-		setMake(inmake);
-		setModel(inmodel);
-		setWeight(inweight);
-		setColor(incolor);
-		setMPG(inmpg);
-		setYear(inyear);
+		setVClass(vclass);
+		setMake(make);
+		setModel(model);
+		setWeight(weight);
+		setColor(color);
+		setMPG(mpg);
+		setYear(year);
 	}
 	
-	public void setVClass(String in){
-		vclass = in.toUpperCase();
+	public void setVClass(String vclass){
+		this.vclass = vclass.toUpperCase();
 	}
 	public String getVClass(){
-		return vclass;
+		return this.vclass;
 	}
-	public void setMake(String in){
-		make = in.toUpperCase();
+	public void setMake(String make){
+		this.make = make.toUpperCase();
 	}
 	public String getMake(){
-		return make;
+		return this.make;
 	}
 	
-	public  void setModel(String in){
+	public void setModel(String model){
 		//setter methods usually are VOID datatype as they only act to take in a value without giving anything back
 		// what if I need to make sure model names are stored as uppercase only? If I make the data fields public I cant enforce a rule like that. By hiding the data and using an interface i can
-		model = in.toUpperCase();
+		this.model = model.toUpperCase();
 	}
 	
 	public  String getModel(){
 		//getters datatype for the method needs to match the datatype of the field it will return
 		//notice it isnt taking IN any parameters? It doesnt need to for this case
-		return model;
+		return this.model;
 		
 	}
 	
-	public  void setWeight(int in){
+	public  void setWeight(int weight){
 		// enforce a rule that a weight below 1000 is invalid and notify through the 'notes' field above the weight entered was invalid
-		if (in < 1000)
+		if (weight < 1000)
 		{
-			notes += "The user entered an invalid weight of " + in + " as a weight \n";
+			notes += "The user entered an invalid weight of " + weight + " as a weight \n";
 		}
-		weight = in;
+		this.weight = weight;
 		
 		
 	}
 	public  int getWeight(){
-		return weight;
+		return this.weight;
 	}
-	public  void setColor(String in){
-		color = in;
+	public  void setColor(String color){
+		this.color = color.toUpperCase();;
 	}
 	public  String getColor(){
-		return color;
+		return this.color;
 	}
 	
-	public  void setYear(int in){
+	public  void setYear(int year){
 		//make sure year isnt prior to 1930 or notify in notes an invalid year was entered
-		if (in < 1930)
+		if (year < 1930)
 		{
-			notes += "The user entered an invalid year of " + in +  " for vehicle model year\n";
+			notes += "The user entered an invalid year of " + year +  " for vehicle model year\n";
 		}
-		year = in;
+		this.year = year;
 		
 	}
 	public  int getYear(){
-		return year;
+		return this.year;
 	}
-	public  void setMPG(double in){
-		mpg = in;
+	public  void setMPG(double mpg){
+		this.mpg = mpg;
 	}
 	public  double getMPG(){
-		return mpg;
+		return this.mpg;
 	}
 	
 	
