@@ -1,17 +1,20 @@
 # VehicleDatabase
-This is the vehicle database I created
+This is the vehicle database I created.
 This program takes in text file containing information of various vehicle types and stores the data for manipulation. 
 Each vehicle must be represented as such: 
-(C: Car, T: Truck, MC: Motorcycle, B: Bus, or CT: Commercial Truck)
-(Vehicle make)
-(Vehicle model)
-(Vehicle weight)
-(Vehicle color)
-(Vehicle MPG)
-(Vehicle year)
+---
+(C: Car, T: Truck, MC: Motorcycle, B: Bus, or CT: Commercial Truck), 
+(Vehicle make), 
+(Vehicle model), 
+(Vehicle weight), 
+(Vehicle color), 
+(Vehicle MPG), 
+(Vehicle year), 
+---
 In adition to these categories additonal categories were added for specific vehicle types such as car seating amount, truck hauling capacity, etc.
-
-*example text file*
+---
+# example text file
+---
 C Tesla ModelS 2700 Cobalt 2020 75 4
 C Ford Fiesta 2600 Red 2021 29 2
 C Ford Mustang 2950 Silver 2017 25 4
