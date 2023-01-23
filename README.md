@@ -48,5 +48,6 @@ B Neoplan LowFloor 31000 White 2003 8 45
 CT Freightliner Canyon 25000 Silver 2022 10 2 60000 true
 
 CT Freightliner Urban 17000 White 2022 12 2 12000 false
+
 ---
 The example textfile "VDB.txt" can be used to compile this program
